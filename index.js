@@ -15,8 +15,6 @@ const { tbsBusRoter } = require('./routers/tbsBusRoutes');
 const { travelRoute } = require('./routers/travel_policy_route');
 const { countRouter } = require('./routers/count_search_routes');
 const { homeListRouter } = require('./routers/home_list_routes');
-const { tbsInfoRouter } = require('./routers/tbs_info_routes');
-const { referEarnRouter } = require('./routers/refer_earn_routes');
 const { bookingRouter } = require('./routers/bookingDetails_routes');
 const { ticketRouter } = require('./routers/ticket_view_routes');
 const calendarRouter = require('./routers/peak_calendar_routes');
@@ -63,10 +61,6 @@ app.use('/api', travelRoute)
 app.use('/api', countRouter);
 
 app.use('/api', homeListRouter);
-
-app.use('/api', tbsInfoRouter);
-
-app.use('/api', referEarnRouter);
 
 app.use('/api', bookingRouter)
 

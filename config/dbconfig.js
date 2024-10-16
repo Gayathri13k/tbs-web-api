@@ -8,6 +8,7 @@ const createPool = (database) => {
     user: process.env.USER,
     password: process.env.PASSWORD,
     database,
+    ssl: true
   });
 };
 
